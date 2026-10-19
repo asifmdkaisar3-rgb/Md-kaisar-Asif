@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0A0C0E;
+    --bg-secondary: #101317;
+    --text-primary: #EDE7DC;
+    --text-secondary: #9EA5A8;
+    --text-muted: #6C7378;
+    --accent-amber: #E8913C;
+    --accent-teal: #2E6B72;
+    --border-subtle: rgba(237, 231, 220, 0.13);
+  }
+
+  body {
+    font-family: 'Sora', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0C0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(237, 231, 220, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E8913C;
+}
+
+/* Touch action for throwable deck */
+.touch-pan-y {
+  touch-action: pan-y;
+}
